@@ -28,28 +28,28 @@ public class DoorTravel : MonoBehaviour
             {
                 doorObj.SetActive(false);
                 Camera.main.transform.Translate(-20, 0, 0);
-                player.transform.Translate(-4, 0, 0);
+                player.transform.Translate(-4.5f, 0, 0);
                 doorObj.SetActive(true);
             }
             if (name == "RightDoor")
             {
                 doorObj.SetActive(false);
                 Camera.main.transform.Translate(20, 0, 0);
-                player.transform.Translate(4, 0, 0);
+                player.transform.Translate(4.5f, 0, 0);
                 doorObj.SetActive(true);
             }
             if (name == "BottomDoor")
             {
                 doorObj.SetActive(false);
                 Camera.main.transform.Translate(0, -12, 0);
-                player.transform.Translate(0, -5, 0);
+                player.transform.Translate(0, -4.5f, 0);
                 doorObj.SetActive(true);
             }
             if (name == "TopDoor")
             {
                 doorObj.SetActive(false);
                 Camera.main.transform.Translate(0, 12, 0);
-                player.transform.Translate(0, 5, 0);
+                player.transform.Translate(0, 4.5f, 0);
                 doorObj.SetActive(true);
             }
         }

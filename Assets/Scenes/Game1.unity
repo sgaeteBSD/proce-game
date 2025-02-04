@@ -122,6 +122,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &541352037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541352039}
+  - component: {fileID: 541352038}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &541352038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541352037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4570619accd2a854b9106d18f997618f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 2800000, guid: 52c604cfad981c7429f6545da78c459d, type: 3}
+--- !u!4 &541352039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541352037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2339404, y: 0.048336275, z: 0.06843525}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &696661790
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,6 +201,11 @@ MonoBehaviour:
   minRooms: 10
   gridSizeX: 10
   gridSizeY: 10
+  minRoomScale: 1
+  maxRoomScale: 3
+  randomElementPrefabs:
+  - {fileID: 1357480882}
+  maxRandomElements: 3
 --- !u!4 &696661792
 Transform:
   m_ObjectHideFlags: 0
@@ -229,12 +279,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 52c604cfad981c7429f6545da78c459d, type: 3}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -249,7 +299,7 @@ Transform:
   m_GameObject: {fileID: 1357480882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.29, y: 0.59, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -262,6 +312,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4592056141169122581, guid: e901e30f073076248a32d9a6fc083ca1, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.79607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592056141169122581, guid: e901e30f073076248a32d9a6fc083ca1, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.79607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592056141169122581, guid: e901e30f073076248a32d9a6fc083ca1, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.79607844
+      objectReference: {fileID: 0}
     - target: {fileID: 4592056141169122582, guid: e901e30f073076248a32d9a6fc083ca1, type: 3}
       propertyPath: m_Name
       value: Main Camera
