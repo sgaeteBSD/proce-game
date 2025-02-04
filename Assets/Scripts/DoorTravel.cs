@@ -27,14 +27,14 @@ public class DoorTravel : MonoBehaviour
             if (name == "LeftDoor")
             {
                 doorObj.SetActive(false);
-                Camera.main.transform.Translate(-23, 0, 0);
+                Camera.main.transform.Translate(-20, 0, 0);
                 player.transform.Translate(-4, 0, 0);
                 doorObj.SetActive(true);
             }
             if (name == "RightDoor")
             {
                 doorObj.SetActive(false);
-                Camera.main.transform.Translate(23, 0, 0);
+                Camera.main.transform.Translate(20, 0, 0);
                 player.transform.Translate(4, 0, 0);
                 doorObj.SetActive(true);
             }
